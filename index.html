@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Roll The Dice</title>
+  </head>
+  <body>
+
+  <div id="container">
+    <h1> ROLL THE DICE </H1>
+    <button onclick="rollingDice()">ROLL A DICE</button><br />
+    <img id="diceImage" src="" width="300" height="300" style="display:none"/>
+    </div>
+
+    <script type="text/javascript">
+
+      function rollingDice()
+
+{
+
+      var images = ["images/1.png", "images/2.png", "images/3.png", "images/4.png",
+      "images/5.png",  "images/6.png"];
+
+      var diceImage = document.getElementById("diceImage");
+
+      var randomNumber = Math.floor(Math.random() * 6);
+
+      diceImage.src = images[randomNumber];
+
+      diceImage.style.display = "";
+
+    }
+
+
+        </script>
+      </body>
+      </html>
